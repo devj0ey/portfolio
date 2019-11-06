@@ -53,7 +53,7 @@ h3 {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 100px;
     line-height: 2;
 }
 
@@ -73,20 +73,20 @@ p {
     margin: 0 auto;
 }
 
-.item-details h3 + p {
+.item-details h3+p {
     font-style: italic;
 }
 
-.item-details h3 ~ p {
+.item-details h3~p {
     margin: 0;
 }
 
-.divider > section {
+.divider>section {
     border-bottom: 1px dashed #2d3142;
     padding: 25px 0;
 }
 
-.divider > section:last-of-type {
+.divider>section:last-of-type {
     border-bottom: none;
 }
 
@@ -95,7 +95,6 @@ p {
 
 header {
     background: #ef9354;
-    text-align: center;
 }
 
 /* projects
@@ -125,11 +124,6 @@ header {
     overflow: hidden;
 }
 
-.project-item img {
-    float: left;
-    margin-right: 20px;
-}
-
 .project-item h3 {
     margin-top: 0px;
 }
@@ -144,12 +138,6 @@ header {
 
 .work-exp a {
     color: #fff;
-}
-
-.job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
 }
 
 .job-summary p:first-child {
@@ -180,7 +168,6 @@ header {
 footer {
     background: #2d3142;
     color: #bfc0c0;
-    text-align: center;
 }
 
 footer a {
@@ -199,11 +186,52 @@ ul {
 .contact-list {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
 .contact-list a {
     padding: 15px;
     display: inline-block;
+}
+
+/* responsive
+---------------------- */
+
+@media screen and (min-width:750px) {
+
+    header,
+    footer {
+        text-align: center;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        margin-bottom: 20px;
+    }
+
+    h1,
+    h2 {
+        line-height: 1;
+    }
+
+    .contact-list a  {
+        padding: 5px;
+    }
 }
