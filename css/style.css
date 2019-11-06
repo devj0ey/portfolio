@@ -53,7 +53,7 @@ h3 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
     line-height: 2;
 }
 
@@ -168,6 +168,10 @@ header {
 
 .edu p {
     width: 60%;
+}
+
+.edu h3 {
+    margin: 15px 0px 0px 0px;
 }
 
 /* contact info
